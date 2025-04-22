@@ -10,6 +10,22 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  
+}
+
+::-webkit-scrollbar {
+  width: 4px;           
+  height: 4px;         
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 10px;
 }
 
 a {
@@ -27,6 +43,7 @@ body {
   min-height: 100vh;
   padding-left: 3rem;
   padding-right: 3rem;
+  
 }
 
 header {
@@ -36,10 +53,16 @@ header {
   position: relative;
 }
 
-h1 {
+.logo-link{
+  
+}
+
+.site-logo{
   font-size: 2em;
   line-height: 1.1;
+  font-weight: 700;
   color: black;
+  cursor: pointer;
 }
 
 .header-links {
@@ -150,3 +173,4 @@ button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
+

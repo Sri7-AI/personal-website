@@ -3,9 +3,8 @@
   line-height: 1.5;
   font-weight: 400;
 
-  color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background-color: #faecd7;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -15,52 +14,122 @@
 
 a {
   font-weight: 500;
-  color: #646cff;
+  color: #1a1815;
   text-decoration: inherit;
 }
 a:hover {
-  color: #535bf2;
+  color: #cc7708;
 }
 
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
 }
 
 h1 {
-  font-size: 3.2em;
+  font-size: 2em;
   line-height: 1.1;
+  color: black;
 }
+
+.header-links {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 1.5em;
+ 
+}
+
+.social-links {
+  display: flex;
+  gap: .75em;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  gap: 2em;
+}
+
+.left-column {
+  flex: 1;
+}
+
+.right-column {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  align-items: center;
+  gap: 3em;
+}
+
+.tagline {
+  font-weight: 700;
+  color: #363432;
+  font-size: 2em;
+  line-height: 120%;
+  text-align: left;
+  margin: 0;
+}
+
+h2 {
+  color: #595755;
+  font-weight: 700;
+  font-size: .75em;
+  text-transform: uppercase;
+  text-decoration: underline;
+  letter-spacing: .05em;
+}
+
+.body-copy {
+  font-weight: 400;
+  color: #363432;
+  line-height: 150%;
+}
+
+footer {
+  background-color: #12100e;
+  padding: 3em;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  gap: 2em;
+  text-align: right;
+}
+
+h3 {
+  margin: 0;
+  color: #918e8c;
+  font-size: 1em;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: .5em;
+}
+
+.footer-links a {
+  color: #e0dedc;
+}
+
 
 #app {
-  max-width: 1280px;
+  max-width: 1440px;
   margin: 0 auto;
-  padding: 2rem;
   text-align: center;
-}
-
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vanilla:hover {
-  filter: drop-shadow(0 0 2em #f7df1eaa);
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
 }
 
 button {
@@ -80,17 +149,4 @@ button:hover {
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
 }

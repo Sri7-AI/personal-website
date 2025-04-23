@@ -8,12 +8,3 @@ async function loadPage(page) {
 
 // Initial load
 loadPage('home');
-
-// Add event listeners to nav links
-document.querySelectorAll('nav a').forEach(link => {
-  link.addEventListener('click', (e) => {
-    e.preventDefault();
-    const page = e.target.getAttribute('data-page');
-    loadPage(page);
-  });
-});

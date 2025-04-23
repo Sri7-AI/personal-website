@@ -53,9 +53,6 @@ header {
   position: relative;
 }
 
-.logo-link{
-  
-}
 
 .work-img {
   width: 240px;
@@ -166,6 +163,13 @@ main {
 }
 
 
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
 
 .left-column {
   display: flex;
@@ -184,6 +188,10 @@ main {
   width: 50%;
 }
 
+.interest-item {
+  color: black;
+}
+
 h4 {
   color: black;
   margin: 0;
@@ -192,6 +200,17 @@ h4 {
 h5 {
   color: black;
   margin: 0;
+}
+
+.byline {
+  display: flex;
+  flex-direction: column;
+}
+
+.author {
+  margin: 0;
+  color: black;
+
 }
 
 .work-header {
@@ -214,6 +233,32 @@ h5 {
   text-align: left;
   margin: 0;
   width: 50%;
+}
+
+.book-img {
+  height: 240px;
+  width: 160px;
+  object-fit: cover;
+
+}
+
+.section-title {
+  text-align: center;
+  width: 100%;
+}
+
+.books-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  align-items: stretch;
+  width: 100%;
+}
+
+.book-cards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 h2 {
@@ -247,6 +292,24 @@ h3 {
   font-size: 1em;
 }
 
+.interest-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+.hobbies {
+  display: flex;
+  align-items: center;
+  gap: 2em;
+}
+
+.book-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
 .carousel {
   position: relative;
   width: 400px;
@@ -258,10 +321,11 @@ h3 {
   transition: transform 0.5s ease-in-out;
 }
 
-carousel-img {
+.carousel-img {
   width: 400px;
-  height: auto;
+  height: 400px;
   flex-shrink: 0;
+  object-fit: cover;
 }
 
 .hobbies {

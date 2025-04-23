@@ -154,6 +154,7 @@ main {
   gap: 2em;
   padding-top: 1em;
   padding-bottom: 2em;
+  flex: 1;
 }
 
 .row {
@@ -162,14 +163,6 @@ main {
   align-items: center;
 }
 
-
-.prev {
-  left: 10px;
-}
-
-.next {
-  right: 10px;
-}
 
 .left-column {
   display: flex;
@@ -345,10 +338,12 @@ h3 {
 }
 
 
-#app {
+html, body {
   max-width: 1440px;
   margin: 0 auto;
   text-align: center;
+  height: 100%;
+  min-height: 100vh;
 }
 
 

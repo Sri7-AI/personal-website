@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Work</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <script type="module" src="/main.js"></script>
+    <header>
+      <a class="logo-link" href="/"><h1 class="site-logo">Srivatsa BS</h1></a>
+      <div class="header-links">
+        <a class="header-link" href="/work.html">Work</a>
+        <a class="header-link" href="/interests.html">Interests</a>
+        <a class="header-link" href="/contact.html">Contact</a>
+      </div>
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/srivatsa-b-s/" target="_blank">
+          <img
+            class="linkedin-logo"
+            style="height: 24px"
+            src="./assets/LI-In-Bug.png"
+          />
+        </a>
+        <a href="https://github.com/Sri7-AI" target="_blank">
+          <img
+            class="github-logo"
+            style="height: 24px"
+            src="./assets/github-mark.png"
+          />
+        </a>
+      </div>
+    </header>
+    <main>
+      <div class="interest-content">
+        <div class="hobbies">
+          <div class="carousel">
+            <div class="carousel-track">
+              <img
+                src="./assets/WhatsApp Image 2025-04-22 at 20.50.23 (11).jpeg"
+                class="carousel-img"
+              />
+              <img
+                src="./assets/WhatsApp Image 2025-04-22 at 20.50.23 (8).jpeg"
+                class="carousel-img"
+              />
+              <img
+                src="./assets/WhatsApp Image 2025-04-22 at 20.50.23 (3).jpeg"
+                class="carousel-img"
+              />
+            </div>
+            <button class="carousel-btn prev"><</button>
+            <button class="carousel-btn next">></button>
+          </div>
+          <ul class="interests-list">
+            <li class="interest-item">
+              Passionate about exploring both nature and the mind
+            </li>
+            <li class="interest-item">
+              Enjoy hiking and trekking for mental clarity
+            </li>
+            <li class="interest-item">
+              Play Indian drums (Mridangam) and flute for rhythm and relaxation
+            </li>
+            <li class="interest-item">
+              Sports enthusiast: basketball and badminton
+            </li>
+            <li class="interest-item">
+              Former state-level chess player with a love for strategic thinking
+            </li>
+          </ul>
+        </div>
+        <div class="books-section">
+          <h2 class="section-title">Books</h2>
+          <div class="book-cards">
+            <div class="book-card">
+              <img class="book-img" src="./assets/Atomic habits book.png" />
+              <div class="byline">
+                <h5>Author</h5>
+                <p class="author">James Clear</p>
+              </div>
+            </div>
+            <div class="book-card">
+              <img class="book-img" src="./assets/Quantum computing.jpg" />
+              <div class="byline">
+                <h5>Author</h5>
+                <p class="author">Jack Hidary</p>
+              </div>
+            </div>
+            <div class="book-card">
+              <img class="book-img" src="./assets/The beauty of falling.jpg" />
+              <div class="byline">
+                <h5>Author</h5>
+                <p class="author">Claudia de Rham</p>
+              </div>
+            </div>
+            <div class="book-card">
+              <img class="book-img" src="./assets/prisoner of Geo.jpg" />
+              <div class="byline">
+                <h5>Author</h5>
+                <p class="author">Tim Marshall</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="footer-links">
+        <h3>Site</h3>
+        <a class="footer-link" href="/interests.html">Interests</a>
+        <a class="footer-link" href="/contact.html">Contact</a>
+        <a class="footer-link" href="/work.html">Work</a>
+      </div>
+      <div class="footer-links">
+        <h3>Social</h3>
+        <a
+          class="footer-link"
+          href="https://www.linkedin.com/in/srivatsa-b-s/"
+          target="_blank"
+          >LinkedIn</a
+        >
+        <a class="footer-link" href="/contact.html">Resume</a>
+        <a class="footer-link" href="https://github.com/Sri7-AI" target="_blank"
+          >GitHub</a
+        >
+      </div>
+    </footer>
+  </body>
+  <script>
+    window.addEventListener("DOMContentLoaded", () => {
+      const nextBtn = document.querySelector(".next");
+      const prevBtn = document.querySelector(".prev");
+      const track = document.querySelector(".carousel-track");
+      const images = document.querySelectorAll(".carousel-img");
+
+      let index = 0;
+      const imageWidth = 400; // Update to your actual image width
+
+      if (nextBtn && prevBtn && track) {
+        nextBtn.addEventListener("click", () => {
+          index = (index + 1) % images.length;
+          track.style.transform = `translateX(-${index * imageWidth}px)`;
+        });
+
+        prevBtn.addEventListener("click", () => {
+          index = (index - 1 + images.length) % images.length;
+          track.style.transform = `translateX(-${index * imageWidth}px)`;
+        });
+      }
+    });
+  </script>
+</html>

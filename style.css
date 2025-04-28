@@ -46,10 +46,11 @@ header {
 
 
 .work-img {
-  width: 240px;
+  width: auto;
   height: 240px;
   object-fit: cover;
   object-position: center;
+  aspect-ratio: 16 / 9;
 }
 
 .intro {
@@ -232,7 +233,7 @@ h5 {
 .main-content {
   display: flex;
   flex-direction: column;
-  gap: 2em;
+  gap: 4.5em;
 }
 
 .tagline {

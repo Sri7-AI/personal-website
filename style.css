@@ -37,15 +37,6 @@ a:hover {
   color: #cc7708;
 }
 
-body {
-  margin: 0;
-  min-width: 320px;
-  min-height: 100vh;
-  padding-left: 3rem;
-  padding-right: 3rem;
-  
-}
-
 header {
   display: flex;
   align-items: center;
@@ -66,7 +57,7 @@ header {
   flex-direction: row;
   gap: 2em;
   align-items: center;
-  justify-content: center;
+  text-align: center;
 }
 
 form {
@@ -74,6 +65,7 @@ form {
   margin-left: auto;
   margin-right: auto;
   flex-direction: column;
+  align-items: stretch;
   justify-items: flex-start;
   padding: 2.25em;
   gap: .675em;
@@ -82,13 +74,15 @@ form {
   background-color: #f0e0cc;
   border-radius: .675em;
   height: fit-content;
+  max-width: 600px;
 }
 
 .form-field {
   display: flex;
   flex-direction: column;
   gap: .25em;
-  flex-grow: 1;
+  flex: 1 1 250px;
+  width: 100%;
 }
 
 .sender-info {
@@ -96,23 +90,45 @@ form {
   flex-direction: row;
   gap: 1.25em;
   width: 100%;
+  flex-wrap: wrap;
 }
 
 label {
   color: #807d79;
   font-weight: 500;
   font-size: .75em;
+  text-align: left;
 
+}
+
+.button-submit {
+  align-self: flex-end;
+  width: auto;
+  margin-top: 2em;
 }
 
 .form-end {
   display: flex;
   flex-direction: column;
-  gap: 2em;
+  align-items: flex-end;
+}
+
+.form-end  .form-field{
+  flex: 0 0 auto;
+  width: 100%;
 }
 
 textarea{
   resize: none;
+}
+
+input::placeholder,
+textarea::placeholder {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #807d79;
+  font-size: 0.9em;
+  font-weight: 400;
+  opacity: 1;
 }
 
 .square-img {
@@ -183,6 +199,7 @@ main {
 
 .interest-item {
   color: black;
+  text-align: left;
 }
 
 h4 {
@@ -223,9 +240,9 @@ h5 {
   color: #363432;
   font-size: 2em;
   line-height: 120%;
-  text-align: left;
+  text-align: center;
   margin: 0;
-  width: 50%;
+  max-width: 600px;
 }
 
 .book-img {
@@ -337,13 +354,20 @@ h3 {
   color: #e0dedc;
 }
 
+.page-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
 
 html, body {
   max-width: 1440px;
   margin: 0 auto;
   text-align: center;
   height: 100%;
-  min-height: 100vh;
+  padding-left: 3rem;
+  padding-right: 3rem;
 }
 
 
